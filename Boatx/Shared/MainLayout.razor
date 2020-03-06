@@ -1,39 +1,36 @@
 ﻿@inherits LayoutComponentBase
-
 @* <div class="sidebar"> *@
 @*     <NavMenu /> *@
 @* </div> *@
+   
 
-    <div class="main" >
-        <nav id = "header" class = "navbar navbar-fixed-top top-row px-4 auth" >
-            <div class = "container" >
-                <div class = "navbar-header" >
-                    <button type = "button"
-                            class = "navbar-toggle collapsed"
-                            data-toggle = "collapse"
-                            data-target = "#navbar"
-                            aria-expanded = "false"
-                            aria-controls = "navbar" >
-                        <span class = "sr-only" >Toggle navigation</span>
-                        <span class = "fa fa-bars" ></span>
-                    </button>
-                    <a class = "navbar-brand" href = "#" >Modern</a>
-                </div>
-                <div id = "navbar" class = "navbar-collapse collapse navbar-right" >
-                    <ul class="nav navbar-nav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">Download</a></li>
-                       
-                    </ul>
-                </div>
+<div class="main">
+    <nav id="header" class="navbar navbar-fixed-top top-row">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button"
+                        class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#navbar"
+                        aria-expanded="false"
+                        aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bars"></span>
+                </button>
+                <a class="navbar-brand" href="#">Modern</a>
             </div>
-        </nav>
-
-
-        <div class="content px-4">
-            @Body
+            <div id="navbar" class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#">Download</a></li>
+                    <LoginDisplay />
+                </ul>
+            </div>
         </div>
+    </nav>
+
+</div>
+    <div class="content px-4" data-spy=" scroll" data-target="#header">
+        @Body
     </div>
+

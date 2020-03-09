@@ -782,7 +782,19 @@ ol.linenums {
     position: absolute;
     width: 100%;
     height: auto;
-    background: rgba(0,0,0,50);
+    /* background: black rgba(0,0,0,50); */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* position: fixed; /* Sit on top of the page content !1! */
+    /* display: none; /* Hidden by default !1! */
+    /* width: 100%; /* Full width (cover the whole page) !1! */
+    /* height: 100%; /* Full height (cover the whole page) !1! */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Black background with opacity */
+    /* z-index: 2; /* Specify a stack order in case you're using a different order for other elements !1! */
+    /* cursor: pointer; /* Add a pointer on hover !1! */
 }
 
 .home-text {
@@ -999,7 +1011,7 @@ ul.features-list-2 li {
 
 #section-3 {
     /* background: url('../images/testimonials.jpg'); */
-    background-image: url('../images/ferry.jpg');
+    background-image: url('../images/promo.jpg');
     background-position: center;
     background-size: cover;
     position: relative;

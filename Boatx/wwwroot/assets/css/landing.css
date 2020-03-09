@@ -772,16 +772,17 @@ ol.linenums {
     width: 100%;
     height: 100%;
     position: relative;
+    /* background-image: url('../images/bg.jpg'); */
     /* background: url('../images/bg.jpg') fixed; */
-    background-image: url('../images/bg.jpg');
+    /* background-image: url('../wwwroot/assets/images/bg.jpg'); */
     background-size: cover;
 }
 
 .overlay {
     position: absolute;
     width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.8);
+    height: auto;
+    background: rgba(0,0,0,50);
 }
 
 .home-text {
@@ -997,7 +998,8 @@ ul.features-list-2 li {
 }
 
 #section-3 {
-    background: url('../images/testimonials.jpg');
+    /* background: url('../images/testimonials.jpg'); */
+    background-image: url('../images/ferry.jpg');
     background-position: center;
     background-size: cover;
     position: relative;

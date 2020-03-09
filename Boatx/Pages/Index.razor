@@ -2,52 +2,77 @@
 
 
 
-<div class="home" id="home">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="home-text col-md-8">
-                <h2 class="wow fadeInDown"
-                    data-wow-delay="1.5s"
-                    data-wow-duration="1.5s"
-                    data-wow-offset="10">
-                    Get there faster with
-                </h2>
+    <div id="home"
+         class="home wow"
+         data-wow-delay="0.5s"
+         data-wow-duration="1.5s"
+         data-wow-offset="10">
+        
+        <div class = "overlay" ></div>
 
-                <h1 class="wow fadeInDown"
-                    data-wow-delay="2s"
-                    data-wow-duration="1.5s"
-                    data-wow-offset="10">
-                    B-Dash.
-                </h1>
-                <br /><br /><br />
-                <p class="lead wow fadeInDown"
-                   data-wow-delay="2s"
-                   data-wow-duration="1.5s"
-                   data-wow-offset="10">
-                    Using water instead of land is guranteed to get you to where-ever faster. Enjoy fast comfortable
-                    Dash-trips with B-Dash.
-                </p>
-                <br />
-                <a href="#"
-                   target="_blank"
-                   class="btn btn-default btn-rounded btn-lg wow fadeInUp"
-                   data-wow-delay="2.5s"
-                   data-wow-duration="1.5s"
-                   data-wow-offset="10">Download</a>
-                <a href=""
-                   target="_blank"
-                   class="btn btn-success btn-rounded btn-lg wow fadeInUp"
-                   data-wow-delay="2.5s"
-                   data-wow-duration="1.5s"
-                   data-wow-offset="10">Book a Quick Ride</a>
-            </div>
-            <div class="scroller">
-                <div class="mouse"><div class="wheel"></div></div>
+        <video id="videoplayer"
+               buffered muted="true"
+               src="../assets/images/bg.mp4"
+               width="100%" height="auto"
+               autoplay="autoplay" loop
+               type="video/mp4"
+               playsinline></video>
+
+        @* <img src="../assets/images/bg.png" class="home" alt="" /> *@
+        <!-- Set the Flash video to an exact size -->
+        @*         @Video.Flash(path: "~/assets/images/bg.swf", width: "1000", height: "100", *@
+        @*                      scale: "exactfit") *@
+
+
+
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="home-text col-md-8">
+                    <h2 class="wow fadeInDown"
+                        data-wow-delay="1.5s"
+                        data-wow-duration="1.5s"
+                        data-wow-offset="10">
+                        Get there faster with
+                    </h2>
+
+                    <h1 class="wow fadeInDown"
+                        data-wow-delay="2s"
+                        data-wow-duration="1.5s"
+                        data-wow-offset="10">
+                        B-Dash.
+                    </h1>
+                    <br /><br /><br />
+                    <p class="lead wow fadeInDown"
+                       data-wow-delay="2s"
+                       data-wow-duration="1.5s"
+                       data-wow-offset="10">
+                        Using water instead of land is guranteed to get you to where-ever faster. Enjoy fast comfortable
+                        Dash-trips with B-Dash.
+                    </p>
+                    <br />
+                    <a href="#"
+                       target="_blank"
+                       class="btn btn-default btn-rounded btn-lg wow fadeInUp"
+                       data-wow-delay="2.5s"
+                       data-wow-duration="1.5s"
+                       data-wow-offset="10">Download</a>
+                    <a href=""
+                       target="_blank"
+                       class="btn btn-success btn-rounded btn-lg wow fadeInUp"
+                       data-wow-delay="2.5s"
+                       data-wow-duration="1.5s"
+                       data-wow-offset="10">Book a Quick Ride</a>
+                </div>
+                <div class="scroller">
+                    <div class="mouse"><div class="wheel"></div></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 <!-- features -->
 <div class="container" id="features">
@@ -110,7 +135,7 @@
                  data-wow-delay="0.5s"
                  data-wow-duration="1.5s"
                  data-wow-offset="10">
-                <img src="~/assets/images/iphone.png" class="iphone-img" alt="" />
+                <img src="../assets/images/iphone.png" class="iphone-img" alt="" />
 
             </div>
             <div class="col-sm-8 wow fadeInRight"
